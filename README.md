@@ -1,6 +1,9 @@
 documentation: 
-running docker 
+running docker
+
 `docker-compose up --build`
 
-start sql if not using docker 
+
+start sql if not using docker
+
 `brew services start mysql`
