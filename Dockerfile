@@ -16,6 +16,6 @@ WORKDIR /src/vvia
 
 COPY --from=builder /viia/main .
 
-COPY views views
+COPY --from=builder /viia/views views
 
 CMD ["./main"]
