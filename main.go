@@ -5,7 +5,7 @@ import (
 	"net/http"
 	"project-pertama/config"
 	categorycontroller "project-pertama/controllers/categorycontrollers"
-	homecontroller "project-pertama/controllers/homexontroller"
+	homecontroller "project-pertama/controllers/homecontroller"
 	"project-pertama/controllers/productcontroller"
 )
 
