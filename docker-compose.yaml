@@ -1,0 +1,12 @@
+services:
+  web:
+    container_name: viia_web
+    image: viia_web:latest
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    restart: unless-stopped
+    tty: true
+     
