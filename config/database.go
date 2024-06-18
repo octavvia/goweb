@@ -10,7 +10,8 @@ import (
 var DB *sql.DB
 
 func ConnectDB() {
-	db, err := sql.Open("mysql", "root:root@/my_new_database?parseTime=true")
+	// db, err := sql.Open("mysql", "root:root@/my_new_database?parseTime=true")
+	db, err := sql.Open("mysql", "root:root@tcp(host.docker.internal:3306)/my_new_database?parseTime=true")
 	if err != nil {
 		panic(err)
 	}
